@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>374</width>
+    <height>470</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>374</width>
+    <height>470</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ESP32 PC Monitor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_global">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="leftMargin">
+     <number>15</number>
+    </property>
+    <property name="topMargin">
+     <number>15</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
+    <property name="bottomMargin">
+     <number>15</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="groupBoxConfig">
+      <property name="title">
+       <string>⚙️ Configuração do Display</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelLinha1">
+         <property name="text">
+          <string>Linha 1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditTexto2"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QComboBox" name="comboBoxLinha3"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditTexto4"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditTexto3"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelLinha3">
+         <property name="text">
+          <string>Linha 3:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelLinha2">
+         <property name="text">
+          <string>Linha 2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QComboBox" name="comboBoxLinha2"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QComboBox" name="comboBoxLinha4"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelLinha4">
+         <property name="text">
+          <string>Linha 4:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayoutChecks">
+         <item>
+          <widget class="QCheckBox" name="checkBoxIniciarPC">
+           <property name="text">
+            <string>Iniciar com o Windows</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+         <item>
+          <widget class="QPushButton" name="pushButtonAplicar">
+           <property name="text">
+            <string>💾 Aplicar Alterações</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonRestaurar">
+           <property name="text">
+            <string>🔄 Restaurar Padrão</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2">
+        <widget class="QComboBox" name="comboBoxLinha1"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditTexto1"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBoxPreview">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayoutPreview">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>320</width>
+           <height>120</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>380</width>
+           <height>140</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #0b0f0e;
+color: #00d2ff;
+font-family: 'Consolas', 'Courier New', monospace;
+font-size: 15px;
+font-weight: bold;
+border-radius: 8px;
+border: 2px solid #1a3a4b;
+padding: 10px;</string>
+         </property>
+         <property name="text">
+          <string>CPU: 14%
+RAM: 42%
+GPU: 68%
+TEMP: 55 C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
